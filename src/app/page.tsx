@@ -1,25 +1,9 @@
 import EventList from "@/components/events/event-list";
 import { getFeaturedEvents } from "../../dummy-data";
-
-// export default function Home() {
-//   const featuredEvents = getFeaturedEvents();
-//   return (
-//     <div>
-//       <ul>
-//         <EventList items={featuredEvents}></EventList>
-//       </ul>
-//     </div>
-//   );
-// }
-
-
-// pages/index.tsx
-import React from 'react';
 import Layout from "@/components/layout/layout";
 
-const Home: React.FC = () => {
+export default function Home() {
   const featuredEvents = getFeaturedEvents();
-
   return (
     <Layout>
       <div>
@@ -29,7 +13,5 @@ const Home: React.FC = () => {
     </div>
     </Layout>
   );
-};
-
-export default Home;
+}
 
